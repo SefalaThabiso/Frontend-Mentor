@@ -1,0 +1,83 @@
+/* colors */
+:root {
+  --clr-primary-400: hsl(25, 97%, 53%);
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(217, 12%, 63%);
+  --clr-neutral-300: hsl(216, 12%, 54%);
+  --clr-neutral-400: #252d37;
+  --clr-neutral-500: #121417;
+}
+
+main {
+  height: 100vh;
+  background-color: var(--clr-neutral-500);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.box {
+  background: var(--clr-neutral-400);
+  overflow: hidden;
+  display: none;
+  border-radius: 9px;
+  padding: 1rem;
+}
+
+.grid__section {
+  display: grid;
+  gap: 1rem;
+}
+
+.rating--section {
+  display: grid;
+}
+
+.rating--section .icon {
+  background-color: var(--clr-neutral-500);
+  width: 30px;
+  height: 30px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.active {
+  display: block;
+}
+
+.ratings {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.ratings li {
+  width: 30px;
+  height: 30px;
+  background-color: var(--clr-neutral-500);
+  color: var(--clr-neutral-300);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+button {
+  width: 100%;
+  padding: 0.45rem;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--clr-primary-400);
+  color: var(--clr-neutral-100);
+}
+
+.chosen {
+  color: red;
+  background-color: pink;
+}
